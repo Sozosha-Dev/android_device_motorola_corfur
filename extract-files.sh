@@ -55,8 +55,14 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        system_ext/lib64/libwfdnative.so)
+            ${PATCHELF} --remove-needed "android.hidl.base@1.0.so" "${2}"
+            ;;
         system_ext/etc/permissions/moto-telephony.xml)
             sed -i "s#/system/#/system_ext/#" "${2}"
+            ;;
+        vendor/etc/vintf/manifest/vendor.dolby.media.c2@1.0-service.xml)
+            sed -ni '/default1/!p' "${2}"
             ;;
     esac
 }
