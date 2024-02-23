@@ -14,6 +14,14 @@ $(call inherit-product, device/motorola/corfur/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Crdroid stuff
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+TARGET_SUPPORTS_QUICK_TAP := true
+
+
 PRODUCT_NAME := lineage_corfur
 PRODUCT_DEVICE := corfur
 PRODUCT_MANUFACTURER := motorola
