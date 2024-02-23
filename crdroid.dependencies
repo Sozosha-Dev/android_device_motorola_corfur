@@ -1,0 +1,24 @@
+[
+    {
+        "remote":       "github",
+        "repository":   "TogoFire/packages_apps_ViPER4AndroidFX",
+        "target_path":  "packages/apps/ViPER4AndroidFX",
+        "revision":     "v4a"
+    },
+        "remote":       "github",
+        "repository":   "LineageOS/android_hardware_motorola",
+        "target_path":  "hardware/motorola",
+        "revision":     "lineage-21"
+    },
+        "remote":       "github",
+        "repository":   "LineageOS/android_system_qcom",
+        "target_path":  "system/qcom",
+        "revision":     "lineage-21"
+    }, 
+        "remote":       "github",
+        "repository":   "SM6375-Project/device_motorola_corfur",
+        "target_path":  "device/motorola/corfur",
+        "revision":     "fourteen"
+    }
+
+]
